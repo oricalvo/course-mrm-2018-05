@@ -1,0 +1,11 @@
+{
+  "name": "manage-multiple-projects-with-yarn-workapce",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces": [
+	"mylib",
+	"myapp"
+  ],
+  "private": true
+}
