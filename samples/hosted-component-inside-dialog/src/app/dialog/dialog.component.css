@@ -1,0 +1,10 @@
+.root {
+  display: block;
+  width: 10em;
+  height: 10em;
+  border: 1px solid black;
+}
+
+.header {
+  background-color: rgb(200, 200, 200);
+}

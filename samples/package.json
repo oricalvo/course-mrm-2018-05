@@ -1,0 +1,12 @@
+{
+  "name": "repo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/oricalvo/course-mrm-2018-05.git",
+  "author": "oricalvo <ori.calvo@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
