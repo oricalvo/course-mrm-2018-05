@@ -1,0 +1,10 @@
+<h1>ngFor</h1>
+
+<button (click)="refresh()">Refresh</button>
+<button (click)="change()">Change</button>
+
+<ul>
+  <li *ngFor="let contact of contacts; trackBy: trackByFn">
+    <app-contact-details [contact]="contact"></app-contact-details>
+  </li>
+</ul>

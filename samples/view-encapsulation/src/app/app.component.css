@@ -1,0 +1,11 @@
+:host {
+  display: block;
+}
+
+:host-context(.rtl) .btn {
+  background-color: blue;
+}
+
+:host-context(.ltr) .btn {
+  background-color: red;
+}
