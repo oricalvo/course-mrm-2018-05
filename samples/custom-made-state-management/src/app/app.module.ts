@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {ApplicationRef, NgModule} from '@angular/core';
 
 
 import { AppComponent } from './app.component';
@@ -11,6 +11,7 @@ import { ProgressComponent } from './progress/progress.component';
 import { CustomerIndexComponent } from './customer-index/customer-index.component';
 import {ContactService} from './contact.service';
 import {CustomerService} from './customer.service';
+import {Profiler} from './common/annotations';
 
 
 @NgModule({
@@ -29,7 +30,11 @@ import {CustomerService} from './customer.service';
     AppService,
     ContactService,
     CustomerService,
+    Profiler,
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(profiler: Profiler) {
+  }
+}
