@@ -1,0 +1,10 @@
+<h2>Home</h2>
+
+<input [(ngModel)]="filter">
+<button (click)="find()">Find</button>
+
+<ul>
+  <li *ngFor="let contact of contacts" (click)="gotoDetails(contact)">
+    <span>{{contact.name}}</span>
+  </li>
+</ul>
