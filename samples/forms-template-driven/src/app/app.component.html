@@ -1,0 +1,23 @@
+<h1>Forms</h1>
+
+<form #formModel="ngForm">
+  <div>
+    Name:
+    <input name="userName" required [(ngModel)]="userName" #userNameModel="ngModel">
+    <span *ngIf="userNameModel.invalid">Invalid</span>
+  </div>
+
+  <div>
+    E-Mail:
+    <input name="email" type="email" [(ngModel)]="email" #emailModel="ngModel" email>
+    <span *ngIf="emailModel.invalid">Invalid</span>
+  </div>
+
+  <div>
+    ID:
+    <input name="id" type="text" [(ngModel)]="id" #idModel="ngModel" number>
+    <span *ngIf="idModel.invalid">Invalid</span>
+  </div>
+
+  <button (click)="save()">Save</button>
+</form>

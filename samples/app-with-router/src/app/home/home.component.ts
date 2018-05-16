@@ -33,6 +33,6 @@ export class HomeComponent implements OnInit {
   }
 
   gotoDetails(contact) {
-    this.router.navigate(["contact", contact.id]);
+    this.router.navigate(["contact", contact.id, {name: "ori"}]);
   }
 }
